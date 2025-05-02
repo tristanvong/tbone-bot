@@ -8,7 +8,7 @@ import java.util.EnumSet;
 public class BotConfiguration {
     private BotConfiguration() {
         try {
-            String botToken = System.getenv("BOT_TOKEN");
+            String botToken = Constants.BOT_TOKEN;
 
             JDABuilder.createLight(botToken, EnumSet.of(
                     GatewayIntent.GUILD_MESSAGES
